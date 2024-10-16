@@ -12,6 +12,7 @@
         android:id="@+id/imageButton7"
         android:layout_width="110dp"
         android:layout_height="110dp"
+        android:layout_marginEnd="16dp"
         android:background="#fdffb5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,49 +44,76 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.156" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="364dp"
-        android:layout_height="372dp"
+        android:id="@+id/tvDescription"
+        android:layout_width="361dp"
+        android:layout_height="74dp"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="4dp"
         android:text="1984, de George Orwell, retrata um futuro distópico onde o governo totalitário controla tudo, até os pensamentos. Winston Smith, o protagonista, começa a questionar essa realidade opressiva enquanto trabalha reescrevendo a história. Sua tentativa de resistir ao controle do Partido o leva a um caminho de traição e desespero."
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
+        android:textColor="#444"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="245dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="435dp"
-        android:layout_height="193dp"
-        app:srcCompat="@drawable/olho_1984"
-        tools:layout_editor_absoluteX="-12dp"
-        tools:layout_editor_absoluteY="-4dp" />
+        android:id="@+id/imgTop"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/olho_1984"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="237dp"
-        android:layout_height="37dp"
-        android:fontFamily="monospace"
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Sinapse Proibida"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#555"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintTop_toBottomOf="@id/tvMenuTitle" />
+
+
+    <TextView
+        android:id="@+id/tvMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Menu"
+        android:textColor="#333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgTop" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="298dp"
+        android:layout_height="248dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hq_menu"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="92dp"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/speech_bubble_145975_1280"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="264dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
